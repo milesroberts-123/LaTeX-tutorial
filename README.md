@@ -251,6 +251,7 @@ $\beta_{ij}$
 ```
 
 Add both subscripts and superscripts to a letter simultaneously
+
 `$\gamma_{ij}^{xyz}$`
 
 ### Fractions
