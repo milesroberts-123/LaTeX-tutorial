@@ -98,17 +98,35 @@ Output: **This is my bold text.**
 
 #### Referencing bibliography
 
-You can integrate your citation manager with overleaf, but you need to pay money (gross! :P)
+You can integrate your citation manager with overleaf, but you need to pay money (gross! :P).
 
-Instead, download your citation library in a .bibtex format from your citation manager, then upload this file to your overleaf project.
+Instead, download your bibliography in a .bibtex format from your citation manager, then upload this file to your overleaf project. This will be a `.bib` file with entries that look like this:
 
-`\citep`
+```
+@article{idForMyReference,
+	title = something,
+	volume = something,
+	issn = something,
+	url = something,
+	doi = something,
+	...
+}
 
-`\citealt`
+```
 
-`\citet*`
-	
-**Never manually type in citations.**
+One the line above `\end{document}`, add `\bibliography{nameOfMyBibtexFileExcludingExstension}`. Now you can add citations using the nat-bib package!
+
+`\citep{idForMyReference}` (Author et al. 2022)
+
+`\citealt{idForMyReference}` Author et al. 2022
+
+`\citet*{idForMyReference}` Autor et al. (2022)
+
+You get the reference ids from the first entry of each `@article` in the `.bib` file.
+
+In Zotero, reference ids default to be the first author's last name, followed by the first word in the paper title (excluding the word "the" if it starts with that), followed by the published year. These three things are separated by underscores. Example: `\citep{wheeler_transcription_2022}`.
+
+**Never manually type in citations.** 
 
 #### Referencing Figures
 
