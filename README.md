@@ -149,8 +149,6 @@ You get the reference ids from the first entry of each `@article` in the `.bib` 
 
 In Zotero, reference ids default to be the first author's last name, followed by the first word in the paper title (excluding the word "the" if it starts with that), followed by the published year. These three things are separated by underscores. Example: `\citep{wheeler_transcription_2022}`.
 
-**Never manually type in citations.** 
-
 #### Referencing Figures
 
 Use the `\ref` command to reference a figure. The input to the command is the figure label that you defined in the figure environment with the `\label` command. Always use '\ref' to reference a figure instead of manually typing "Figure 1". This will prevent you from having to renumber your figures if you decide to switch up their order!
