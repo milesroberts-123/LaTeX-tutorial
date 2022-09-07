@@ -152,7 +152,7 @@ Example: `\href{http://www.overleaf.com}{Something Linky} `
 
 [Something Linky](http://www.overleaf.com}
 
-## LaTeX Commands 4: Writing your own commands
+### LaTeX Commands 4: Writing your own commands
 
 ```
 \newcommand{\myCommandName}{
