@@ -251,7 +251,9 @@ To start typesetting math, you first need to define a math environment. This is 
 Examples:
 
 ```
-$\alpha = 0.25$
+Our significance is defined as $\alpha = 0.25$.
+
+The formula for watterson's theta is:
 
 \[ \theta_{W} = \frac{1}{a}\]
 ```
@@ -263,7 +265,13 @@ Input greek symbols into your text by first defining a math environment, then ca
 
 Example:
 
-`The greek alphabet goes: $\alpha$, $\beta$, $\gamma$, $\delta$,...`
+```
+The greek alphabet goes: $\alpha$, $\beta$, $\gamma$, $\delta$,...
+
+My favorite number $z$ is defined as:
+
+\[ z = \alpha + \beta + \gamma +\delta \]
+```
 
 ### Subscripts and superscripts
 
@@ -285,9 +293,9 @@ Similar to superscripts, use curly braces to group multiple characters into the 
 Add both subscripts and superscripts to a letter simultaneously
 
 ```
-My favorite number in math is $\gamma_{ij}^{xyz}$ and all other numbers aren't as cool
+My other favorite number in math is $\gamma_{ij}^{xyz}$ and all other numbers aren't as cool
 
-My favorite number is defined as:
+This number is defined as:
 
 \[ \gamma_{ij}^{xyz} = \alpha + \beta + \delta \]
 
