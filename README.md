@@ -58,6 +58,7 @@ For example, most documents you write in LaTex will have a `\begin{document}` at
 
 To write a list in latex, you begining by define a block of code as a list environment. This block of code is defined by the `\begin{itemize}` and '\end{itemize}' commands.
 
+Example:
 ```
 \begin{itemize}
 	\item The first item on my list
@@ -65,10 +66,16 @@ To write a list in latex, you begining by define a block of code as a list envir
 \end{itemize}
 ```
 
+* The first item on my list
+* The second item on my list
+
 ## LaTex Environments 2: Figures
-	> generally recommend to have figures in pdf format whenver possible, don't need to monkey with resolution like you would with jpeg
-	> scientific color palettes: https://www.fabiocrameri.ch/colourmaps-userguide/
-	> r package for scientific color palettes (scico): https://github.com/thomasp85/scico
+
+### Misc figure advice
+I generally recommend you have figures in pdf format whenever possible. Pdfs are vector-based graphics, so you don't need to mess around with the resolution of the image.
+
+Here is also a great resource on [scientific color palettes](https://www.fabiocrameri.ch/colourmaps-userguide/) and an [r package for these color palettes that works well with ggplot](https://github.com/thomasp85/scico)
+
 ## Inserting tables
 ## Inserting code
 ## Inserting hyperlinks
