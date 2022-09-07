@@ -154,7 +154,11 @@ Example: `\href{http://www.overleaf.com}{Something Linky} `
 
 ## LaTeX Commands 4: Writing your own commands
 
-`\newcommand{\myCommandName}{LinesOfCodeForMyNewCommand}`
+```
+\newcommand{\myCommandName}{
+		Lines of code For my new command go here!
+}
+```
 
 ## Latex Environments
 An **environment** in LaTeX is a block of code that has a specific behavior depending on the identity you give it.
@@ -163,7 +167,7 @@ For example, most documents you write in LaTeX will have a `\begin{document}` at
 
 ### LaTeX Environments 1: Lists
 
-To write a list in latex, you begining by define a block of code as a list environment. This block of code is defined by the `\begin{itemize}` and '\end{itemize}' commands.
+To write a list in latex, you begin by defining a block of code as a list environment. This block of code is defined by the `\begin{itemize}` and `\end{itemize}` commands.
 
 Example:
 ```
