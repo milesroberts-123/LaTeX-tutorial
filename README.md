@@ -176,7 +176,7 @@ Example:
 	}
 ```
 
-## LateX Environments
+## LaTeX Environments
 An **environment** in LaTeX is a block of code that has a specific behavior depending on the identity you give it.
 
 For example, most documents you write in LaTeX will have a `\begin{document}` at the top of the file and end with `\end{document}`. Any lines of code between these two commands will be interpreted according to the rules of the "document" environment. Some simple examples follow.
