@@ -36,6 +36,27 @@ Simply type as you normally would between the `\begin{document}` and '\end{docum
 
 ## Adding comments
 
+If you want to add a line of text to the body of the document, but don't want said text to be compiled, then you can add a comment! This is similar to commenting in other programming languages
+
+### single line comments
+Start the line you don't want compiled with a percent sign `%`. 
+
+Example: 
+
+`% This text will not be compiled`
+
+### multi-line comments
+
+This requires loading the `comment` package in your document's preamble, then defining the comment environment. More on environments later!
+
+```
+\usepackage{comment}
+
+\begin{comment}
+	My comments go here!
+\end{comment}
+```
+
 ## Commands
 You use LateX commands to do anything other than adding text to your document. All commands begin with a backslash `\`, followed by the name of the command, and then a list of command inputs in curly brackets `{}`. If the command can be passed parameters, then these parameters are usually defined in a list with square brackets `[]` before the command inputs in curly brackets. Examples of some simple command follow.
 
@@ -152,7 +173,9 @@ Example:
 \end{center}
 ```
 
-#### LaTex Environments 4: Defining your own environments
+### LaTex Environments 4: Defining your own environments
+
+Example:
 
 ```
 \newenvironment{myEnvironmentName}
@@ -181,19 +204,69 @@ Example:
 
 `The greek alphabet goes: $\alpha$, $\beta$, $\gamma$, $\delta$,...`
 
-### Operators
-
-Writing mathematical operators works in a similar way to writing greek symbols:
-
-`$\alpha \times 5 = \beta$` Multiplication
-
-`$x \in [0,1]$` The variable X lies between zero and one, inclusive
-
 ### Subscripts and superscripts
+
+Superscript examples
+
+```
+$\alpha^2$
+$\beta^{15\gamma}$
+```
+
+Subscript examples
+```
+$\alpha_i$
+$\beta_{ij}$
+```
+
+Add both subscripts and superscripts to a letter simultaneously
+`$\gamma_{ij}^{xyz}$`
 
 ### Fractions
 
-### Larger operators: Sums, products, etc.
+`\frac{numerator}{denominator}`
+
+Examples:
+
+`$\pi = \frac{C}{D}$`
+
+### Small operators
+
+Writing mathematical operators works in a similar way to writing greek symbols:
+
+Examples:
+
+`$\alpha \times 5 = \beta$` Multiplication
+
+`$x \in [0,1]$` The variable X has a value in the closed interval from zero and one
+
+### Large operators
+
+#### Sums
+
+`\sum_{i=start}^{stop} = function of i`
+
+Examples:
+
+```
+The sum $\sum_{n=1}^{\infty} ar^{n}$ will be discussed in this text further
+
+A geometric series takes the form:
+
+\[ \sum_{n=1}^{\infty} ar^{n} \]
+```
+
+#### Products
+
+Same as above but use `\prod`
+
+#### Integrals
+
+Same as above but use `\int`. For double or triple integrals use `\iint` and `\iiint` respectively.
+
+#### Limits
+
+Same as above but use `\lim`.
 
 ## Useful references
 [Overleaf documentation](https://www.overleaf.com/learn)
