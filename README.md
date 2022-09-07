@@ -250,10 +250,11 @@ To start typesetting math, you first need to define a math environment. This is 
 
 Examples:
 
-`$\alpha = 0.25$`
+```
+$\alpha = 0.25$
 
-`\[ \theta_{Wi} = \frac{1}{a_i}\]`
-	
+\[ \theta_{W} = \frac{1}{a}\]
+```
 The next sections break down the math environment a little more
 
 ### Greek symbols
@@ -269,48 +270,59 @@ Example:
 Superscript examples
 
 ```
-$\alpha^2$
-$\beta^{15\gamma}$
+add a superscript like this: $\alpha^2$ 
+
+use curly braces to group items into the superscript, such as in this: $\beta^{15\gamma}$
 ```
 
 Subscript examples
 ```
-$\alpha_i$
-$\beta_{ij}$
+You do a superscript like this $\alpha_i$
+
+Similar to superscripts, use curly braces to group multiple characters into the subscript like this $\beta_{ij}$
 ```
 
 Add both subscripts and superscripts to a letter simultaneously
 
-`$\gamma_{ij}^{xyz}$`
+```
+My favorite number in math is $\gamma_{ij}^{xyz}$ and all other numbers aren't as cool
 
+My favorite number is defined as:
+
+\[ \gamma_{ij}^{xyz} = \alpha + \beta + \delta \]
+
+The definitions of other numbers aren't as cool
+
+```
 ### Fractions
 
-`\frac{numerator}{denominator}`
+```
+The area of a cirlce is $\pi = \frac{C}{D}$
 
-Examples:
-
-`$\pi = \frac{C}{D}$`
-
+The area of a circle is given below:
+\[ \pi = \frac{C}{D} \]
+```
 ### Small operators
 
 Writing mathematical operators works in a similar way to writing greek symbols:
 
 Examples:
 
-`$\alpha \times 5 = \beta$` Multiplication
+```
+Beta is defined as $\beta = \alpha \times 5
 
-`$x \in [0,1]$` The variable X has a value in the closed interval from zero and one
+The variable X has a value in the closed interval from zero and one. In other words,
 
+\[ x \in [0,1] \]
+```
 ### Large operators
 
 #### Sums
 
-`\sum_{i=start}^{stop} = function of i`
-
-Examples:
-
 ```
-The sum $\sum_{n=1}^{\infty} ar^{n}$ will be discussed in this text further
+The general format for a sum is $\sum_{i=start}^{stop} = f(i)$
+
+The sum $\sum_{n=1}^{\infty} ar^{n}$ will be discussed in this text further.
 
 A geometric series takes the form:
 
