@@ -31,7 +31,7 @@ If you don't know where you're submitting yet, try the bioarxiv template!
 
 LaTex documents are created by writing lines of code into a `.tex` file. This code is then compiled to produce a `.pdf` file.
 
-LaTex documents are divided into a **preamble** and **body**. The preamble of the document will mostly not be shown in the pdf output. This is where you define the type of document being written, load packages, and the values of formatting parameters. The body of the document (i.e. everything in between the `\begin{document}` and '\end{document}' lines) will be compiled into the pdf output.
+LaTex documents are divided into a **preamble** and **body**. The preamble of the document will mostly not be shown in the pdf output. This is where you define the type of document being written, load packages, and the values of formatting parameters. The body of the document (i.e. everything in between the `\begin{document}` and `\end{document}` lines) will be compiled into the pdf output.
 
 For complex documents, the preamble can get to be quite large and cumbersome. Therefore, the preamble is often stored in a separate `.cls` (i.e. class) file instead of at the top of the `.tex` file. This is similar to the format of other coding languages, like C++.
 
