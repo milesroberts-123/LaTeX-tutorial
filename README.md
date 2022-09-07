@@ -53,7 +53,7 @@ For complex documents, the preamble can get to be quite large and cumbersome. Th
 
 ## Essential LaTeX packages
 
-In the preamble of your document, type '\usepackage{packageName}' to load a specific package. Some essential LaTeX packages include:
+In the preamble of your document, type `\usepackage{packageName}` to load a specific package. Some essential LaTeX packages include:
 
 * comment - for adding multi-line comments
 * natbib - for adding citations 
