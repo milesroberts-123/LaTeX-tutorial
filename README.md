@@ -3,7 +3,7 @@ A short tutorial on using LaTex - a system for typesetting documents
 
 ## Contents
 
-[What is latex and how do I get it?](https://github.com/milesroberts-123/LaTex-tutorial#what-is-latex-and-how-do-i-get-it)
+[What is latex and how do I get it?](#what-is-latex-and-how-do-i-get-it)
 [Templates](https://github.com/milesroberts-123/LaTex-tutorial#templates)
 [Adding text](https://github.com/milesroberts-123/LaTex-tutorial#adding-text)
 
@@ -31,6 +31,10 @@ For complex documents, the preamble can get to be quite large and cumbersome. Th
 
 ## Essential LaTex packages
 
+comment - for adding multi-line comments
+
+natbib - for adding citations 
+
 ## Adding text
 Simply type as you normally would between the `\begin{document}` and '\end{document}' lines to add text to a latex document. However, remember that one line of text = one paragraph. To begin a new paragraph, you need to hit enter a couple times.
 
@@ -39,6 +43,7 @@ Simply type as you normally would between the `\begin{document}` and '\end{docum
 If you want to add a line of text to the body of the document, but don't want said text to be compiled, then you can add a comment! This is similar to commenting in other programming languages
 
 ### single line comments
+
 Start the line you don't want compiled with a percent sign `%`. 
 
 Example: 
@@ -58,7 +63,8 @@ This requires loading the `comment` package in your document's preamble, then de
 ```
 
 ## Commands
-You use LateX commands to do anything other than adding text to your document. All commands begin with a backslash `\`, followed by the name of the command, and then a list of command inputs in curly brackets `{}`. If the command can be passed parameters, then these parameters are usually defined in a list with square brackets `[]` before the command inputs in curly brackets. Examples of some simple command follow.
+
+You use LateX commands to do anything other than adding text or comments to your document. All commands begin with a backslash `\`, followed by the name of the command, and then a list of command inputs in curly brackets `{}`. If the command can be passed parameters, then these parameters are usually defined in a list with square brackets `[]` before the command inputs in curly brackets. Examples of some simple command follow.
 
 ### LaTex Commands 1: bold, italics, underline
 
@@ -269,4 +275,7 @@ Same as above but use `\int`. For double or triple integrals use `\iint` and `\i
 Same as above but use `\lim`.
 
 ## Useful references
+
 [Overleaf documentation](https://www.overleaf.com/learn)
+
+[Learn LaTeX in 30 minutes](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes)
