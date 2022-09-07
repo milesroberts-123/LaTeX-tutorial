@@ -3,9 +3,17 @@ A short tutorial on using LaTex - a system for typesetting documents
 
 ## Contents
 
-[What is latex and how do I get it?](#what-is-latex-and-how-do-i-get-it)
-[Templates](https://github.com/milesroberts-123/LaTex-tutorial#templates)
-[Adding text](https://github.com/milesroberts-123/LaTex-tutorial#adding-text)
+1. [What is LaTex and how do I get it?](#what-is-latex-and-how-do-i-get-it)
+2. [Templates](#templates)
+3. [General document structure](#general-document-structure)
+4. [Essential LaTex packages](#Essential-latex-packages)
+5. [Adding text](#adding-text)
+6. [Adding comments](#adding-comments)
+..* [single line comments](#single-line-comments)
+..* [multi-line comments](#multi-line-comments)
+7. [LaTex Commands](#commands)
+8. [LaTex Environments](#latex-environments)
+9. [Math](#math!!!-woohoo!!!)
 
 ## What is latex and how do I get it?
 LaTex is a tool for typesetting (i.e. formatting a document to look very nice and professional)
