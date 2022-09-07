@@ -25,7 +25,11 @@ If you don't know where you're submitting yet, try the bioarxiv template!
 
 LaTex documents are created by writing lines of code into a `.tex` file. This code is then compiled to produce a `.pdf` file.
 
-LaTex documents are divided into a **preamble** and **body**. The preamble of the document will not be shown in the odf output. This is where you define the type of document being written and the values of formatting parameters. The body of the document (i.e. everything in between the `\begin{document}` and '\end{document}') will be compiled into the pdf output.
+LaTex documents are divided into a **preamble** and **body**. The preamble of the document will mostly not be shown in the pdf output. This is where you define the type of document being written, load packages, and the values of formatting parameters. The body of the document (i.e. everything in between the `\begin{document}` and '\end{document}' lines) will be compiled into the pdf output.
+
+For complex documents, the preamble can get to be quite large and cumbersome. Therefore, the preamble is often stored in a separate `.cls` (i.e. class) file instead of at the top of the `.tex` file. This is similar to the format of other coding languages, like C++.
+
+## Essential LaTex packages
 
 ## Adding text
 Simply type as you normally would between the `\begin{document}` and '\end{document}' lines to add text to a latex document. However, remember that one line of text = one paragraph. To begin a new paragraph, you need to hit enter a couple times.
@@ -49,7 +53,13 @@ Output: **This is my bold text.**
 
 ### LaTex Commands 2: Section headers
 
-### LaTex Commands 3: Referencing commands
+`\section{My section name}` Define a section
+
+`\subsection{My subsection name}` Define a subsection within a section
+
+`\subsubsection{My subsubsection name}` Define a subsubsection within a subsection
+
+### LaTex Commands 3: Referencing
 
 #### Referencing bibliography
 
@@ -63,11 +73,26 @@ Instead, download your citation library in a .bibtex format from your citation m
 
 `\citet*`
 	
+**Never manually type in citations.**
+
 #### Referencing Figures
 
+Use the `\ref` command to reference a figure. The input to the command is the figure label that you defined in the figure environment with the `\label` command. Always use '\ref' to reference a figure instead of manually typing "Figure 1". This will prevent you from having to renumber your figures if you decide to switch up their order!
+
+Example:
+
+`See Figure \ref{fig:myFigureLabel} for more information.`
+
+More on Figures in the comming sections!
+
+#### Referencing a url
+
+Example: `\href{http://www.overleaf.com}{Something Linky} `
+
+[Something Linky](http://www.overleaf.com}
 
 ## Latex Environments
-An *environment* in LaTex is a block of code that has a specific behavior depending on the identity you give it.
+An **environment** in LaTex is a block of code that has a specific behavior depending on the identity you give it.
 
 For example, most documents you write in LaTex will have a `\begin{document}` at the top of the file and end with `\end{document}`. Any lines of code between these two commands will be interpreted according to the rules of the "document" environment. Some simple examples follow.
 
@@ -98,18 +123,15 @@ These are the basic elements of a figure environment.
 \end{figure}
 ```
 
+You can add lots of extra inputs to this environment and its associated commands to help format your figure. For more information, see [here](https://www.overleaf.com/learn/latex/Positioning_images_and_tables).
 
-
-You can add lots of extra inputs to 
 #### Misc figure advice
-I generally recommend you have figures in pdf format whenever possible. Pdfs are vector-based graphics, so you don't need to mess around with the resolution of the image.
+I generally recommend you have figures as pdfs whenever possible. Pdfs are vector-based graphics, which essentially means you don't need to mess with the resolution of the image if its in pdf.
 
-Here is also a great resource on [scientific color palettes](https://www.fabiocrameri.ch/colourmaps-userguide/) and an [r package for these color palettes that works well with ggplot](https://github.com/thomasp85/scico)
+Here is also a great resource on [scientific color palettes](https://www.fabiocrameri.ch/colourmaps-userguide/) and an [r package for these color palettes that works well with ggplot](https://github.com/thomasp85/scico).
 
-## Inserting tables
-## Inserting code
-## Inserting hyperlinks
-## Adding table of contents
+### LaTex Environments 3: Tables
+
 ## Adding math!!! Woohoo!!!
 	> greek symbols
 	> math operators
