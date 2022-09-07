@@ -4,9 +4,7 @@ A short tutorial on using LaTex - a system for typesetting documents
 ## Contents
 
 [What is latex and how do I get it?](https://github.com/milesroberts-123/LaTex-tutorial#what-is-latex-and-how-do-i-get-it)
-
 [Templates](https://github.com/milesroberts-123/LaTex-tutorial#templates)
-
 [Adding text](https://github.com/milesroberts-123/LaTex-tutorial#adding-text)
 
 ## What is latex and how do I get it?
@@ -18,22 +16,30 @@ You can also use LaTex through online applications like [Overleaf](https://www.o
 
 ## Templates
 Always look for a template before starting from scratch!
+
 Genetics, PNAS, Nature, Oxford, PLOS all have submission templates!
-If you don't know where you're submitting yet, try the bioarxiv template
+
+If you don't know where you're submitting yet, try the bioarxiv template!
 
 ## Adding text
-one line = one paragraph
-You need to hit enter a couple times to begin new paragraph
+Simply type as you normally would to add text to a latex document. However, remember that one line of text = one paragraph. To begin a new paragraph, you need to hit enter a couple times.
 
 ## Commands
-
 You use LateX commands to do anything other than adding text to your document. All commands begin with a backslash `\`, followed by the name of the command, and then a list of command inputs in curly braces `{}`. Examples of some simple command follow.
 
 ## bold, italics, underline, subscript, superscript
 
 `\textbf{}` Bolden text
+
 `\textit{}` Italicize text
+
 `\underline{}` Underline text
+
+Example:
+
+Input: `\textbf{This is my bold text.}`
+
+Output: **This is my bold text.**
 
 
 
