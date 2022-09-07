@@ -3,7 +3,7 @@ A short tutorial on using LaTeX - a system for typesetting documents
 
 ## Contents
 
-1. [What is LaTeX and how do I get it?](#what-is-latex-and-how-do-i-get-it)
+1. [What is LaTeX, how do I get it, and why do I need it?](#what-is-latex-how-do-i-get-it-and-why-do-i-need-it)
 2. [Templates](#templates)
 3. [General document structure](#general-document-structure)
 4. [Essential LaTeX packages](#Essential-latex-packages)
@@ -11,15 +11,22 @@ A short tutorial on using LaTeX - a system for typesetting documents
 6. [Adding comments](#adding-comments)
 7. [LaTeX Commands](#latex-commands)
 8. [LaTeX Environments](#latex-environments)
-9. [Math](#math-woohoo)
+9. [Math!!! Woohoo!!!](#math-woohoo)
 10. [Useful references](#useful-references)
 
-## What is latex and how do I get it?
+## What is LaTeX, how do I get it, and why do I need it?
 LaTeX is a tool for typesetting (i.e. formatting a document to look very nice and professional)
 
 You can download LaTeX software for PC, Mac, or Linux OS though [here](https://www.latex-project.org/get/)
 
 You can also use LaTeX through online applications like [Overleaf](https://www.overleaf.com/) without having to download anything.
+
+Consider using LaTeX if you want documents that:
+* look professionally formatted even as a rough draft
+* are easy to format
+* nicely display mathematical equations
+* automatically update references to other parts of a document that frequently change during the writing process, such as citations and figures
+* can be written like code and easily integrate with github 
 
 ## Templates
 Always look for a template before starting from scratch!
@@ -216,6 +223,8 @@ Example:
 ```
 
 ## Math!!! Woohoo!!!
+
+Where LaTeX really excells is in typesetting equations! What is a pain in Microsoft Word can be done with ease in LaTeX.
 
 To start typesetting math, you first need to define a math environment. This is slightly different from how we've defined environments so far. If you want your math to be written in line with a body of text, then you use `$$`. If you want your equation to be on it's own line and centered, then you use `\[ \]`.
 
