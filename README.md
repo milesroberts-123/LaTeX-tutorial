@@ -13,7 +13,7 @@ A short tutorial on using LaTex - a system for typesetting documents
 ..* [multi-line comments](#multi-line-comments)
 7. [LaTex Commands](#commands)
 8. [LaTex Environments](#latex-environments)
-9. [Math](#math!!!-woohoo!!!)
+9. [Math](#math-woohoo)
 
 ## What is latex and how do I get it?
 LaTex is a tool for typesetting (i.e. formatting a document to look very nice and professional)
