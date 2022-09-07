@@ -1,24 +1,24 @@
-# LaTex-tutorial
-A short tutorial on using LaTex - a system for typesetting documents
+# LaTeX-tutorial
+A short tutorial on using LaTeX - a system for typesetting documents
 
 ## Contents
 
-1. [What is LaTex and how do I get it?](#what-is-latex-and-how-do-i-get-it)
+1. [What is LaTeX and how do I get it?](#what-is-latex-and-how-do-i-get-it)
 2. [Templates](#templates)
 3. [General document structure](#general-document-structure)
-4. [Essential LaTex packages](#Essential-latex-packages)
+4. [Essential LaTeX packages](#Essential-latex-packages)
 5. [Adding text](#adding-text)
 6. [Adding comments](#adding-comments)
-7. [LaTex Commands](#latex-commands)
-8. [LaTex Environments](#latex-environments)
+7. [LaTeX Commands](#latex-commands)
+8. [LaTeX Environments](#latex-environments)
 9. [Math](#math-woohoo)
 
 ## What is latex and how do I get it?
-LaTex is a tool for typesetting (i.e. formatting a document to look very nice and professional)
+LaTeX is a tool for typesetting (i.e. formatting a document to look very nice and professional)
 
-You can download LaTex software for PC, Mac, or Linux OS though [here](https://www.latex-project.org/get/)
+You can download LaTeX software for PC, Mac, or Linux OS though [here](https://www.latex-project.org/get/)
 
-You can also use LaTex through online applications like [Overleaf](https://www.overleaf.com/) without having to download anything.
+You can also use LaTeX through online applications like [Overleaf](https://www.overleaf.com/) without having to download anything.
 
 ## Templates
 Always look for a template before starting from scratch!
@@ -29,20 +29,20 @@ If you don't know where you're submitting yet, try the bioarxiv template!
 
 ## General document structure
 
-LaTex documents are created by writing lines of code into a `.tex` file. This code is then compiled to produce a `.pdf` file.
+LaTeX documents are created by writing lines of code into a `.tex` file. This code is then compiled to produce a `.pdf` file.
 
-LaTex documents are divided into a **preamble** and **body**. The preamble of the document will mostly not be shown in the pdf output. This is where you define the type of document being written, load packages, and the values of formatting parameters. The body of the document (i.e. everything in between the `\begin{document}` and `\end{document}` lines) will be compiled into the pdf output.
+LaTeX documents are divided into a **preamble** and **body**. The preamble of the document will mostly not be shown in the pdf output. This is where you define the type of document being written, load packages, and the values of formatting parameters. The body of the document (i.e. everything in between the `\begin{document}` and `\end{document}` lines) will be compiled into the pdf output.
 
 For complex documents, the preamble can get to be quite large and cumbersome. Therefore, the preamble is often stored in a separate `.cls` (i.e. class) file instead of at the top of the `.tex` file. This is similar to the format of other coding languages, like C++.
 
-## Essential LaTex packages
+## Essential LaTeX packages
 
 comment - for adding multi-line comments
 
 natbib - for adding citations 
 
 ## Adding text
-Simply type as you normally would between the `\begin{document}` and '\end{document}' lines to add text to a latex document. However, remember that one line of text = one paragraph. To begin a new paragraph, you need to hit enter a couple times.
+Simply type as you normally would between the `\begin{document}` and `\end{document}` lines to add text to a LaTeX document. However, remember that one line of text = one paragraph. To begin a new paragraph, you need to hit enter a couple times.
 
 ## Adding comments
 
@@ -68,11 +68,11 @@ This requires loading the `comment` package in your document's preamble, then de
 \end{comment}
 ```
 
-## LaTex Commands
+## LaTeX Commands
 
 You use LateX commands to do anything other than adding text or comments to your document. All commands begin with a backslash `\`, followed by the name of the command, and then a list of command inputs in curly brackets `{}`. If the command can be passed parameters, then these parameters are usually defined in a list with square brackets `[]` before the command inputs in curly brackets. Examples of some simple command follow.
 
-### LaTex Commands 1: bold, italics, underline
+### LaTeX Commands 1: bold, italics, underline
 
 `\textbf{}` Bolden text
 
@@ -86,7 +86,7 @@ Input: `\textbf{This is my bold text.}`
 
 Output: **This is my bold text.**
 
-### LaTex Commands 2: Section headers
+### LaTeX Commands 2: Section headers
 
 `\section{My section name}` Define a section
 
@@ -94,7 +94,7 @@ Output: **This is my bold text.**
 
 `\subsubsection{My subsubsection name}` Define a subsubsection within a subsection
 
-### LaTex Commands 3: Referencing
+### LaTeX Commands 3: Referencing
 
 #### Referencing bibliography
 
@@ -126,16 +126,16 @@ Example: `\href{http://www.overleaf.com}{Something Linky} `
 
 [Something Linky](http://www.overleaf.com}
 
-## LaTex Commands 4: Writing your own commands
+## LaTeX Commands 4: Writing your own commands
 
 `\newcommand{\myCommandName}{LinesOfCodeForMyNewCommand}`
 
 ## Latex Environments
-An **environment** in LaTex is a block of code that has a specific behavior depending on the identity you give it.
+An **environment** in LaTeX is a block of code that has a specific behavior depending on the identity you give it.
 
-For example, most documents you write in LaTex will have a `\begin{document}` at the top of the file and end with `\end{document}`. Any lines of code between these two commands will be interpreted according to the rules of the "document" environment. Some simple examples follow.
+For example, most documents you write in LaTeX will have a `\begin{document}` at the top of the file and end with `\end{document}`. Any lines of code between these two commands will be interpreted according to the rules of the "document" environment. Some simple examples follow.
 
-### LaTex Environments 1: Lists
+### LaTeX Environments 1: Lists
 
 To write a list in latex, you begining by define a block of code as a list environment. This block of code is defined by the `\begin{itemize}` and '\end{itemize}' commands.
 
@@ -150,7 +150,7 @@ Example:
 * The first item on my list
 * The second item on my list
 
-### LaTex Environments 2: Figures
+### LaTeX Environments 2: Figures
 
 These are the basic elements of a figure environment.
 
@@ -169,7 +169,7 @@ I generally recommend you have figures as pdfs whenever possible. Pdfs are vecto
 
 Here is also a great resource on [scientific color palettes](https://www.fabiocrameri.ch/colourmaps-userguide/) and an [r package for these color palettes that works well with ggplot](https://github.com/thomasp85/scico).
 
-### LaTex Environments 3: Tables
+### LaTeX Environments 3: Tables
 
 Example:
 
@@ -185,7 +185,7 @@ Example:
 \end{center}
 ```
 
-### LaTex Environments 4: Defining your own environments
+### LaTeX Environments 4: Defining your own environments
 
 Example:
 
