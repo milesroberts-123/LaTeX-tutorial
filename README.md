@@ -9,7 +9,7 @@ A short tutorial on using LaTex - a system for typesetting documents
 4. [Essential LaTex packages](#Essential-latex-packages)
 5. [Adding text](#adding-text)
 6. [Adding comments](#adding-comments)
-7. [LaTex Commands](#commands)
+7. [LaTex Commands](#latex-commands)
 8. [LaTex Environments](#latex-environments)
 9. [Math](#math-woohoo)
 
