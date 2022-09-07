@@ -27,7 +27,7 @@ Simply type as you normally would to add text to a latex document. However, reme
 ## Commands
 You use LateX commands to do anything other than adding text to your document. All commands begin with a backslash `\`, followed by the name of the command, and then a list of command inputs in curly braces `{}`. Examples of some simple command follow.
 
-## bold, italics, underline, subscript, superscript
+### LaTex Commands 1: bold, italics, underline
 
 `\textbf{}` Bolden text
 
@@ -41,16 +41,31 @@ Input: `\textbf{This is my bold text.}`
 
 Output: **This is my bold text.**
 
+### LaTex Commands 1: Section headers
 
-
-## Lists
-## Adding section headers
-## Adding citations
+### LaTex Commands 3: Citations
 	> can integrate citation manager with overleaf, but you need to pay money (gross! :P)
 	> Download .bibtex format from your citation manager
 	> upload to document
 	> \citep vs \citealt vs \citet*
-## Inserting figures
+
+## Latex Environments
+An *environment* in LaTex is a block of code that has a specific behavior depending on the identity you give it.
+
+For example, most documents you write in LaTex will have a `\begin{document}` at the top of the file and end with `\end{document}`. Any lines of code between these two commands will be interpreted according to the rules of the "document" environment. Some simple examples follow.
+
+### LaTex environments 1: Lists
+
+To write a list in latex, you begining by define a block of code as a list environment. This block of code is defined by the `\begin{itemize}` and '\end{itemize}' commands.
+
+```
+\begin{itemize}
+	\item The first item on my list
+	\item The second item on my list
+\end{itemize}
+```
+
+## LaTex Environments 2: Figures
 	> generally recommend to have figures in pdf format whenver possible, don't need to monkey with resolution like you would with jpeg
 	> scientific color palettes: https://www.fabiocrameri.ch/colourmaps-userguide/
 	> r package for scientific color palettes (scico): https://github.com/thomasp85/scico
