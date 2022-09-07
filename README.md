@@ -148,16 +148,19 @@ More on Figures in the comming sections!
 
 #### Referencing a url
 
-Example: `\href{http://www.overleaf.com}{Something Linky} `
+Example: 
 
-[Something Linky](http://www.overleaf.com}
+`\href{http://www.overleaf.com}{Something Linky} `
+
+[Something Linky](http://www.overleaf.com)
 
 ### LaTeX Commands 4: Writing your own commands
 
 ```
-\newcommand{\myCommandName}{
+\newcommand{\myCommandName}
+	{
 		Lines of code For my new command go here!
-}
+	}
 ```
 
 ## Latex Environments
