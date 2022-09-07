@@ -23,7 +23,6 @@ LaTeX is a tool for typesetting (i.e. formatting a document to look very nice an
 
 Consider using LaTeX if you want documents that:
 * look professionally formatted even as a rough draft
-* are easy to format
 * nicely display mathematical equations
 * automatically update references to other parts of a document that frequently change during the writing process, such as citations and figures
 * can be written like code and easily integrate with github 
