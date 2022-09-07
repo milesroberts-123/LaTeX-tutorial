@@ -10,17 +10,33 @@ A short tutorial on using LaTex - a system for typesetting documents
 [Adding text](https://github.com/milesroberts-123/LaTex-tutorial#adding-text)
 
 ## What is latex and how do I get it?
-	> LaTex is a tool for typesetting (i.e. formatting a document to look very nice and professional)
-	> 
-	> You can download LaTex software though here: https://www.latex-project.org/get/
-	> You can also use LaTex through online applications like Overleaf without having to download anything
+LaTex is a tool for typesetting (i.e. formatting a document to look very nice and professional)
+
+You can download LaTex software for PC, Mac, or Linux OS though [here](https://www.latex-project.org/get/)
+
+You can also use LaTex through online applications like [Overleaf](https://www.overleaf.com/) without having to download anything.
+
 ## Templates
-	> Always look for a template before starting from scratch!
-		> Genetics, PNAS, Nature, Oxford, PLOS all have submission templates!
-	> If you don't know where you're submitting yet, try the bioarxiv template
+Always look for a template before starting from scratch!
+Genetics, PNAS, Nature, Oxford, PLOS all have submission templates!
+If you don't know where you're submitting yet, try the bioarxiv template
+
 ## Adding text
-	> one line = one paragraph, Need to hit enter a couple times to begin new paragraph
+one line = one paragraph
+You need to hit enter a couple times to begin new paragraph
+
+## Commands
+
+You use LateX commands to do anything other than adding text to your document. All commands begin with a backslash `\`, followed by the name of the command, and then a list of command inputs in curly braces `{}`. Examples of some simple command follow.
+
 ## bold, italics, underline, subscript, superscript
+
+`\textbf{}` Bolden text
+`\textit{}` Italicize text
+`\underline{}` Underline text
+
+
+
 ## Lists
 ## Adding section headers
 ## Adding citations
@@ -45,3 +61,6 @@ A short tutorial on using LaTex - a system for typesetting documents
 	> sums
 ## Writing your own functions
 ## How to add comments
+
+## Useful references
+[Overleaf documentation](https://www.overleaf.com/learn)
