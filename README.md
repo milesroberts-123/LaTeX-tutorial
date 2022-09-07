@@ -34,6 +34,8 @@ For complex documents, the preamble can get to be quite large and cumbersome. Th
 ## Adding text
 Simply type as you normally would between the `\begin{document}` and '\end{document}' lines to add text to a latex document. However, remember that one line of text = one paragraph. To begin a new paragraph, you need to hit enter a couple times.
 
+## Adding comments
+
 ## Commands
 You use LateX commands to do anything other than adding text to your document. All commands begin with a backslash `\`, followed by the name of the command, and then a list of command inputs in curly brackets `{}`. If the command can be passed parameters, then these parameters are usually defined in a list with square brackets `[]` before the command inputs in curly brackets. Examples of some simple command follow.
 
@@ -91,6 +93,10 @@ Example: `\href{http://www.overleaf.com}{Something Linky} `
 
 [Something Linky](http://www.overleaf.com}
 
+## LaTex Commands 4: Writing your own commands
+
+`\newcommand{\myCommandName}{LinesOfCodeForMyNewCommand}`
+
 ## Latex Environments
 An **environment** in LaTex is a block of code that has a specific behavior depending on the identity you give it.
 
@@ -132,15 +138,62 @@ Here is also a great resource on [scientific color palettes](https://www.fabiocr
 
 ### LaTex Environments 3: Tables
 
-## Adding math!!! Woohoo!!!
-	> greek symbols
-	> math operators
-	> subscripts and superscripts
-	> $$ vs \[ \]
-	> fractions
-	> sums
-## Writing your own functions
-## How to add comments
+Example:
+
+```
+\begin{center}
+\begin{tabular}{ |c|c|c| } 
+ \hline
+ cell1 & cell2 & cell3 \\ 
+ cell4 & cell5 & cell6 \\ 
+ cell7 & cell8 & cell9 \\ 
+ \hline
+\end{tabular}
+\end{center}
+```
+
+#### LaTex Environments 4: Defining your own environments
+
+```
+\newenvironment{myEnvironmentName}
+    {
+    	Lines of code for new environment go here
+    }
+```
+
+## Math!!! Woohoo!!!
+
+To start typesetting math, you first need to define a math environment. This is slightly different from how we've defined environments so far. If you want your math to be written in line with a body of text, then you use `$$`. If you want your equation to be on it's own line and centered, then you use `\[ \]`.
+
+Examples:
+
+`$\alpha = 0.25$`
+
+`\[ \theta_{Wi} = \frac{1}{a_i}\]`
+	
+The next sections break down the math environment a little more
+
+### Greek symbols
+
+Input greek symbols into your text by first defining a math environment, then calling the appropriate greek symbol command
+
+Example:
+
+`The greek alphabet goes: $\alpha$, $\beta$, $\gamma$, $\delta$,...`
+
+### Operators
+
+Writing mathematical operators works in a similar way to writing greek symbols:
+
+`$\alpha \times 5 = \beta$` Multiplication
+
+`$x \in [0,1]$` The variable X lies between zero and one, inclusive
+
+### Subscripts and superscripts
+
+### Fractions
+
+### Larger operators: Sums, products, etc.
 
 ## Useful references
 [Overleaf documentation](https://www.overleaf.com/learn)
