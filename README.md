@@ -12,6 +12,7 @@ A short tutorial on using LaTeX - a system for typesetting documents
 7. [LaTeX Commands](#latex-commands)
 8. [LaTeX Environments](#latex-environments)
 9. [Math](#math-woohoo)
+10. [Useful references](#useful-references)
 
 ## What is latex and how do I get it?
 LaTeX is a tool for typesetting (i.e. formatting a document to look very nice and professional)
