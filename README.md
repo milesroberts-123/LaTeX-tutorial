@@ -1,6 +1,13 @@
 # LaTex-tutorial
 A short tutorial on using LaTex - a system for typesetting documents
 
+## Contents
+
+[What is latex and how do I get it?](https://github.com/milesroberts-123/LaTex-tutorial#what-is-latex-and-how-do-i-get-it)
+
+[Templates](https://github.com/milesroberts-123/LaTex-tutorial#templates)
+
+[Adding text](https://github.com/milesroberts-123/LaTex-tutorial#adding-text)
 
 ## What is latex and how do I get it?
 	> LaTex is a tool for typesetting (i.e. formatting a document to look very nice and professional)
