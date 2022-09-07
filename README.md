@@ -9,8 +9,6 @@ A short tutorial on using LaTex - a system for typesetting documents
 4. [Essential LaTex packages](#Essential-latex-packages)
 5. [Adding text](#adding-text)
 6. [Adding comments](#adding-comments)
-..* [single line comments](#single-line-comments)
-..* [multi-line comments](#multi-line-comments)
 7. [LaTex Commands](#commands)
 8. [LaTex Environments](#latex-environments)
 9. [Math](#math-woohoo)
@@ -70,7 +68,7 @@ This requires loading the `comment` package in your document's preamble, then de
 \end{comment}
 ```
 
-## Commands
+## LaTex Commands
 
 You use LateX commands to do anything other than adding text or comments to your document. All commands begin with a backslash `\`, followed by the name of the command, and then a list of command inputs in curly brackets `{}`. If the command can be passed parameters, then these parameters are usually defined in a list with square brackets `[]` before the command inputs in curly brackets. Examples of some simple command follow.
 
