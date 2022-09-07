@@ -3,7 +3,7 @@ A short tutorial on using LaTeX - a system for typesetting documents
 
 ## Contents
 
-1. [What is LaTeX, how do I get it, and why do I need it?](#what-is-latex-how-do-i-get-it-and-why-do-i-need-it)
+1. [Defining LaTeX](#defining-latex)
 2. [Templates](#templates)
 3. [General document structure](#general-document-structure)
 4. [Essential LaTeX packages](#Essential-latex-packages)
@@ -14,12 +14,12 @@ A short tutorial on using LaTeX - a system for typesetting documents
 9. [Math!!! Woohoo!!!](#math-woohoo)
 10. [Useful references](#useful-references)
 
-## What is LaTeX, how do I get it, and why do I need it?
+## Defining LaTeX
+
+### What is LaTeX?
 LaTeX is a tool for typesetting (i.e. formatting a document to look very nice and professional)
 
-You can download LaTeX software for PC, Mac, or Linux OS though [here](https://www.latex-project.org/get/)
-
-You can also use LaTeX through online applications like [Overleaf](https://www.overleaf.com/) without having to download anything.
+### Why/when should I use LaTeX?
 
 Consider using LaTeX if you want documents that:
 * look professionally formatted even as a rough draft
@@ -27,6 +27,15 @@ Consider using LaTeX if you want documents that:
 * nicely display mathematical equations
 * automatically update references to other parts of a document that frequently change during the writing process, such as citations and figures
 * can be written like code and easily integrate with github 
+
+### Who uses LaTeX?
+
+Mathematicians and physicists commonly use LaTeX although it is gaining more traction in the biological sciences too.
+
+### How/where can I use LaTeX?
+You can download LaTeX software for PC, Mac, or Linux OS though [here](https://www.latex-project.org/get/)
+
+You can also use LaTeX through online applications like [Overleaf](https://www.overleaf.com/) without having to download anything.
 
 ## Templates
 Always look for a template before starting from scratch!
