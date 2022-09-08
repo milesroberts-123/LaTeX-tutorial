@@ -59,6 +59,7 @@ In the preamble of your document, type `\usepackage{packageName}` to load a spec
 \usepackage{natbib} % for adding citations
 \usepackage{hyperref} % for adding hyperlinks
 \usepackage{comment} % for adding multi-line comments
+\usepackage{graphix} % for adding images
 \bibliographystyle{rusnat} % defines style of natbib bibliography
 ```
 
@@ -241,10 +242,12 @@ These are the basic elements of a figure environment.
 
 ```
 \begin{figure}
-	\includegraphics{evil.pdf}
+    \centering
+	\includegraphics[width = \textwidth, keepaspectratio]{evil.jpg}
 	\caption{Image generated with the Stable Diffusion algorithm using the prompt "evil scientist opens a portal to another dimension".}
 	\label{fig:evilPicture}
 \end{figure}
+
 ```
 
 You can add lots of extra inputs to this environment and its associated commands to help format your figure. For more information, see [here](https://www.overleaf.com/learn/latex/Positioning_images_and_tables).
