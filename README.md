@@ -179,11 +179,13 @@ In Zotero, reference ids default to be the first author's last name, followed by
 
 #### Referencing Figures
 
-Use the `\ref` command to reference a figure. The input to the command is the figure label that you defined in the figure environment with the `\label` command. Always use '\ref' to reference a figure instead of manually typing "Figure 1". This will prevent you from having to renumber your figures if you decide to switch up their order!
+Use the `\ref` command to reference a figure. The input to the command is the figure label that you defined in the figure environment with the `\label` command. Always use `\ref` to reference a figure instead of manually typing "Figure 1". This will prevent you from having to renumber your figures if you decide to switch up their order!
 
 Example:
 
-`See Figure \ref{fig:myFigureLabel} for more information.`
+```
+See Figure \ref{fig:myFigureLabel} for more information.
+```
 
 More on Figures in the comming sections!
 
@@ -195,6 +197,7 @@ Example:
 \href{http://www.overleaf.com}{Something Linky} 
 
 This is the url for Overleaf:
+
 \url{http://www.overleaf.com}
 ```
 
