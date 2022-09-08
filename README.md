@@ -86,11 +86,14 @@ This requires loading the `comment` package in your document's preamble, then de
 \usepackage{comment}
 
 \begin{document}
+	\maketitle
+	
 	This text will be compiled
 	
 	\begin{comment}
 		This text will not be compiled
-		I put comments here
+		I will put multiple lines of comments here
+		Fallout: New Vegas is the best Fallout game
 	\end{comment}
 
 \end{document}
