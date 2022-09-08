@@ -71,7 +71,12 @@ Start the line you don't want compiled with a percent sign `%`.
 
 Example: 
 
-`% This text will not be compiled`
+```
+This is my sentence % This is my comment
+
+I have lots to say % I have many comments to make
+
+```
 
 ### multi-line comments
 
@@ -97,25 +102,23 @@ You use LateX commands to do anything other than adding text or comments to your
 
 ### LaTeX Commands 1: bold, italics, underline
 
-`\textbf{}` Bolden text
+```
+\textbf{This text is bold} % Bold text
 
-`\textit{}` Italicize text
+\textit{This text is italicized} % Italicize text
 
-`\underline{}` Underline text
-
-Example:
-
-Input: `\textbf{This is my bold text.}`
-
-Output: **This is my bold text.**
+\underline{This text is underlined} % Underline text
+```
 
 ### LaTeX Commands 2: Section headers
 
-`\section{My section name}` Define a section
+```
+\section{My section name} % Define a section
 
-`\subsection{My subsection name}` Define a subsection within a section
+\subsection{My subsection name} % Define a subsection within a section
 
-`\subsubsection{My subsubsection name}` Define a subsubsection within a subsection
+\subsubsection{My subsubsection name} % Define a subsubsection within a subsection
+```
 
 ### LaTeX Commands 3: Referencing
 
@@ -139,11 +142,13 @@ Instead, download your bibliography in a .bibtex format from your citation manag
 
 One the line above `\end{document}`, add `\bibliography{nameOfMyBibtexFileExcludingExstension}`. Now you can add citations using the nat-bib package!
 
-`\citep{idForMyReference}` (Author et al. 2022)
+```
+\citep{idForMyReference} % (Author et al. 2022)
 
-`\citealt{idForMyReference}` Author et al. 2022
+\citealt{idForMyReference} % Author et al. 2022
 
-`\citet*{idForMyReference}` Autor et al. (2022)
+\citet*{idForMyReference} % Author et al. (2022)
+```
 
 You get the reference ids from the first entry of each `@article` in the `.bib` file.
 
@@ -163,9 +168,13 @@ More on Figures in the comming sections!
 
 Example: 
 
-`\href{http://www.overleaf.com}{Something Linky} `
+```
+\href{http://www.overleaf.com}{Something Linky} 
 
-[Something Linky](http://www.overleaf.com)
+This is the url for Overleaf:
+\url{http://www.overleaf.com}
+```
+
 
 ### LaTeX Commands 4: Writing your own commands
 
@@ -188,13 +197,13 @@ To write a list in latex, you begin by defining a block of code as a list enviro
 Example:
 ```
 \begin{itemize}
-	\item The first item on my list
-	\item The second item on my list
+	\item milk
+	\item eggs
+	\item cheese
+	\item butter
+	\item flux capacitor
 \end{itemize}
 ```
-
-* The first item on my list
-* The second item on my list
 
 ### LaTeX Environments 2: Figures
 
@@ -217,8 +226,6 @@ Here is also a great resource on [scientific color palettes](https://www.fabiocr
 
 ### LaTeX Environments 3: Tables
 
-Example:
-
 ```
 \begin{center}
 \begin{tabular}{ |c|c|c| } 
@@ -232,8 +239,6 @@ Example:
 ```
 
 ### LaTeX Environments 4: Defining your own environments
-
-Example:
 
 ```
 \newenvironment{myEnvironmentName}
