@@ -155,16 +155,27 @@ Instead, download your bibliography in a .bibtex format from your citation manag
 One the line above `\end{document}`, add `\bibliography{nameOfMyBibtexFileExcludingExstension}`. Now you can add citations using the nat-bib package!
 
 ```
-\citep{hill_molecular_2021} % (Hill et al. 2021)
+\usepackage{natbib}
+\bibliographystyle{rusnat}
 
-\citealt{hill_molecular_2021} % Hill et al. 2021
+\begin{document}
+	\maketitle
 
-\citet*{hill_molecular_2021} % Hill et al. (2021)
+	\citep{hill_molecular_2021} 
+
+	\citealt{hill_molecular_2021} 
+
+	\citet{hill_molecular_2021}
+
+	\citet*{hill_molecular_2021}
+
+	\bibliography{exampleLibrary}
+\end{document}
 ```
 
 You get the reference ids from the first entry of each `@article` in the `.bib` file.
 
-In Zotero, reference ids default to be the first author's last name, followed by the first word in the paper title (excluding the word "the" if it starts with that), followed by the published year. These three things are separated by underscores. Example: `\citep{wheeler_transcription_2022}`.
+In Zotero, reference ids default to be the first author's last name, followed by the first word in the paper title (excluding the word "the" if it starts with that), followed by the published year. These three things are separated by underscores.
 
 #### Referencing Figures
 
