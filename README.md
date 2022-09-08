@@ -214,9 +214,9 @@ These are the basic elements of a figure environment.
 
 ```
 \begin{figure}
-	\includegraphics{fileName.pdf}
-	\caption{Type caption to go underneath figure here}
-	\label{fig:labelToGiveFigure}
+	\includegraphics{evil.pdf}
+	\caption{Image generated with the Stable Diffusion algorithm using the prompt "evil scientist opens a portal to another dimension".}
+	\label{fig:evilPicture}
 \end{figure}
 ```
 
