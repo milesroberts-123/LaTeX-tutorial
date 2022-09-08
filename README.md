@@ -55,8 +55,12 @@ For complex documents, the preamble can get to be quite large and cumbersome. Th
 
 In the preamble of your document, type `\usepackage{packageName}` to load a specific package. Some essential LaTeX packages include:
 
-* comment - for adding multi-line comments
-* natbib - for adding citations 
+```
+\usepackage{natbib} % for adding citations
+\usepackage{hyperref} % for adding hyperlinks
+\usepackage{comment} % for adding multi-line comments
+\bibliographystyle{rusnat} % defines style of natbib bibliography
+```
 
 ## Adding text
 Simply type as you normally would between the `\begin{document}` and `\end{document}` lines to add text to a LaTeX document. However, remember that one line of text = one paragraph. To begin a new paragraph, you need to hit enter a couple times.
