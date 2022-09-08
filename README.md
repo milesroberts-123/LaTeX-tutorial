@@ -132,25 +132,34 @@ You can integrate your citation manager with overleaf, but you need to pay money
 Instead, download your bibliography in a .bibtex format from your citation manager, then upload this file to your overleaf project. This will be a `.bib` file with entries that look like this:
 
 ```
-@article{idForMyReference,
-	title = something,
-	volume = something,
-	issn = something,
-	url = something,
-	doi = something,
-	...
+@article{hill_molecular_2021,
+	title = {Molecular and evolutionary processes generating variation in gene expression},
+	volume = {22},
+	issn = {1471-0056},
+	url = {https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7981258/},
+	doi = {10.1038/s41576-020-00304-w},
+	abstract = {Heritable variation in gene expression is common within and between species. This variation arises from mutations that alter the form or function of molecular gene regulatory networks that are then filtered by natural selection. High-throughput methods for introducing mutations and characterizing their cis- and trans-regulatory effects on gene expression (particularly, transcription) are revealing how different molecular mechanisms generate regulatory variation, while studies comparing these mutational effects to variation seen in the wild are teasing apart the role of neutral and non-neutral evolutionary processes. This integration of molecular and evolutionary biology allows us to understand how the variation in gene expression we see today came to be and to predict how it is most likely to evolve in the future.},
+	number = {4},
+	urldate = {2021-04-29},
+	journal = {Nature reviews. Genetics},
+	author = {Hill, Mark S. and Vande Zande, Pétra and Wittkopp, Patricia J.},
+	month = apr,
+	year = {2021},
+	pmid = {33268840},
+	pmcid = {PMC7981258},
+	pages = {203--215},
+	file = {PubMed Central Full Text PDF:C\:\\Users\\Miles Roberts\\Zotero\\storage\\GJ57YT7K\\Hill et al. - 2021 - Molecular and evolutionary processes generating va.pdf:application/pdf},
 }
-
 ```
 
 One the line above `\end{document}`, add `\bibliography{nameOfMyBibtexFileExcludingExstension}`. Now you can add citations using the nat-bib package!
 
 ```
-\citep{idForMyReference} % (Author et al. 2022)
+\citep{hill_molecular_2021} % (Hill et al. 2021)
 
-\citealt{idForMyReference} % Author et al. 2022
+\citealt{hill_molecular_2021} % Hill et al. 2021
 
-\citet*{idForMyReference} % Author et al. (2022)
+\citet*{hill_molecular_2021} % Hill et al. (2021)
 ```
 
 You get the reference ids from the first entry of each `@article` in the `.bib` file.
