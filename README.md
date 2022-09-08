@@ -88,20 +88,13 @@ I have lots to say % I have many comments to make
 This requires loading the `comment` package in your document's preamble, then defining the comment environment. More on environments later!
 
 ```
-\usepackage{comment}
-
-\begin{document}
-	\maketitle
+This text will be compiled
 	
-	This text will be compiled
-	
-	\begin{comment}
-		This text will not be compiled
-		I will put multiple lines of comments here
-		Fallout: New Vegas is the best Fallout game
-	\end{comment}
-
-\end{document}
+\begin{comment}
+	This text will not be compiled
+	I will put multiple lines of comments here
+	Fallout: New Vegas is the best Fallout game
+\end{comment}
 ```
 
 ## LaTeX Commands
@@ -160,22 +153,15 @@ Instead, download your bibliography in a .bibtex format from your citation manag
 One the line above `\end{document}`, add `\bibliography{nameOfMyBibtexFileExcludingExstension}`. Now you can add citations using the nat-bib package!
 
 ```
-\usepackage{natbib}
-\bibliographystyle{rusnat}
+\citep{hill_molecular_2021} 
 
-\begin{document}
-	\maketitle
+\citealt{hill_molecular_2021} 
 
-	\citep{hill_molecular_2021} 
+\citet{hill_molecular_2021}
 
-	\citealt{hill_molecular_2021} 
+\citet*{hill_molecular_2021}
 
-	\citet{hill_molecular_2021}
-
-	\citet*{hill_molecular_2021}
-
-	\bibliography{exampleLibrary}
-\end{document}
+\bibliography{exampleLibrary}
 ```
 
 You get the reference ids from the first entry of each `@article` in the `.bib` file.
@@ -192,7 +178,7 @@ Example:
 See Figure \ref{fig:myFigureLabel} for more information.
 ```
 
-More on Figures in the comming sections!
+More on figures in the comming sections!
 
 #### Referencing a url
 
@@ -258,6 +244,8 @@ I generally recommend you have figures as pdfs whenever possible. Pdfs are vecto
 Here is also a great resource on [scientific color palettes](https://www.fabiocrameri.ch/colourmaps-userguide/) and an [r package for these color palettes that works well with ggplot](https://github.com/thomasp85/scico).
 
 ### LaTeX Environments 3: Tables
+
+Tables in LaTeX are generally cumbersome and there are lots of components. Make sure you need a LaTeX table before you commit to making one.
 
 ```
 \begin{center}
