@@ -311,7 +311,7 @@ use curly braces to group items into the superscript, such as in this: $\beta^{1
 
 Subscript examples
 ```
-You do a superscript like this $\alpha_i$
+You do a subscript like this $\alpha_i$
 
 Similar to superscripts, use curly braces to group multiple characters into the subscript like this $\beta_{ij}$
 ```
