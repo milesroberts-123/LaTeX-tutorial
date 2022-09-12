@@ -281,7 +281,7 @@ Our significance is defined as $\alpha = 0.25$.
 
 The formula for watterson's theta is:
 
-\[ \theta_{W} = \frac{1}{a}\]
+\[ \theta_{W} = \frac{S}{a}\]
 ```
 The next sections break down the math environment a little more
 
